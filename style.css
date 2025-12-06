@@ -1,0 +1,70 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Style */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff9e5;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Main Section Layout (Using Flexbox) */
+.intro-section {
+    display: flex;
+    gap: 20px;
+    background: rgb(248, 233, 233);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;     /* Keeps image and text aligned */
+}
+
+/* Profile Image — Circle */
+.intro-section img {
+    width: 200px;
+    height: 200px;        /* Must match width for circle */
+    border-radius: 50%;   /* Circle effect */
+    object-fit: cover;    /* Crops image nicely if not square */
+    display: block;
+}
+
+/* Bio Section */
+.bio ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.bio li {
+    margin-bottom: 5px;
+}
+
+.bio a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-section img {
+        margin: 0 auto;
+    }
+}
